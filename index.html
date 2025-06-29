@@ -1,18 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-
 
   <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
   <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
@@ -24,17 +16,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Towards Long-Horizon Vision-Language-Action System:  Reasoning, Acting and Memory</title>
+  <title>Towards Long-Horizon Vision-Language-Action System: Reasoning, Acting and Memory</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -43,7 +33,21 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+
+  <style>
+    /* 强制 avg 单元格不换行并设定最小宽度 */
+    th.avg-header,
+    td.avg-cell {
+      white-space: nowrap;
+      min-width: 100px;
+      text-align: center;
+      vertical-align: middle;
+    }
+  </style>
+
+
 </head>
+
 <body>
 
 
@@ -52,50 +56,77 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Towards Long-Horizon Vision-Language-Action System: Reasoning, Acting and Memory</h1>
+            <h1 class="title is-1 publication-title">Towards Long-Horizon Vision-Language-Action System: Reasoning,
+              Acting and Memory</h1>
             <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
+              <!-- Author list -->
+              <span class="author-block"><a>Daixun Li</a><sub>1</sub><sup>*</sup>,</span>
+              <span class="author-block"><a>Yusi Zhang</a><sub>1</sub><sup>*</sup>,</span>
+              <span class="author-block"><a>Mingxiang Cao</a><sub>1</sub><sup>*</sup>,</span>
+              <span class="author-block"><a>Donglai Liu</a><sub>1</sub><sup>*</sup>,</span>
+              <span class="author-block"><a>Weiying Xie</a><sub>1</sub><sup>✉</sup>,</span>
+              <span class="author-block"><a>Tianlin Hui</a><sub>1</sub>,</span>
+              <span class="author-block"><a>Lunkai Lin</a><sub>2</sub>,</span>
+              <span class="author-block"><a>Zhiqiang Xie</a><sub>2</sub>,</span>
+              <span class="author-block"><a>Yunsong Li</a><sub>1</sub></span>
+            </div>
+
+            <!-- Affiliations -->
+            <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Daixun Li</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Weiying Xie</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
+                <sub>1</sub> The State Key Laboratory of Integrated Services Networks <br>
+                School of Telecommunications Engineering, Xidian University &nbsp;&nbsp;<br>
+                <sub>2</sub> AgileX Robotics <br>
+              <!-- Logos Row: Xidian, ISN, AgileX -->
+                <div class="has-text-centered" style="display: flex; justify-content: center; align-items: center; height: 100px; margin-top: 0.3rem; margin-bottom: 0.4rem;">
+                  <div style="height: 60%; display: flex; align-items: center; margin-right: 24px;">
+                    <img src="static/images/XD.jpg" alt="Xidian University" style="max-height: 100%; max-width: 150px;">
                   </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Xidian Univesity<br>ICCV 2025</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  <div style="height: 60%; display: flex; align-items: center; margin-right: 18px;">
+                    <img src="static/images/ISN.png" alt="ISN Lab" style="max-height: 100%; max-width: 150px;">
                   </div>
+                  <div style="height: 100%; display: flex; align-items: center;">
+                    <img src="static/images/agilex.png" alt="AgileX" style="max-height: 100%; max-width: 150px;">
+                  </div>
+                </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
+                <span style="color: #1e88e5; font-weight: bold;">ICCV 2025</span>
+              </span>
+              <span class="eql-cntrb">
+                <small><br>
+                  <sup>*</sup> Equal Contribution &nbsp;&nbsp;
+                  <sup>✉</sup> Corresponding Author
+                </small>
+              </span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
                     </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
 
-                    <!-- Dataset link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-database"></i>
-                      </span>
-                      <span>Dataset</span>
-                    </a>
+                <!-- Dataset link -->
+                <span class="link-block">
+                  <a href="https://huggingface.co/XDUImageLab" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-database"></i>
                     </span>
+                    <span>Dataset</span>
+                  </a>
+                </span>
 
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/trantor2nd/MindExplore" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -104,209 +135,858 @@
                   </a>
                 </span>
 
-                <!-- ArXiv abstract Link -->
+                <!-- Hugging Face link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+                  <a href="https://huggingface.co/XDUImageLab" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <img src="static/images/hf-logo.png" alt="Hugging Face"
+                        style="height: 1em; vertical-align: middle;">
+                    </span>
+                    <span>Model</span>
+                  </a>
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+  <!-- Teaser image instead of video -->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body has-text-centered">
+        <img src="static/images/zhaiyao-1.png" alt="Teaser" style="max-width: 100%; height: auto; border-radius: 8px;">
         <h2 class="subtitle has-text-centered">
-          First image description.
+          A hierarchical embodied intelligence system with reasoning, acting, and memory modules, achieving
+          state-of-the-art generalization in dynamic environments. Unlike conventional models, MindExplore adopts an
+          expert-level multi-layer architecture for improved capability separation and control.
         </h2>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+  </section>
 
 
 
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Vision-Language-Action (VLA) is crucial for autonomous decision-making in embodied systems. While current
+              methods have advanced single-skill abilities, their short-horizon capability limits applicability in
+              real-world scenarios.
+              To address this challenge, we innovatively propose <strong>MindExplore</strong>, a general hierarchical VLA system
+              with cross-skill for long-horizon tasks in highly dynamic sand. The key insight is to iteratively align
+              the knowledge domain of task planning and action execution. Thus, this task-oriented action enables
+              outstanding generalization across a wide range of real-world scenarios. In the reasoning layer,
+              task-specific chains of thought (CoT) are designed for planning long-horizon task sequences and providing
+              meta-action signals.
+              In the acting layer, a simple but powerful Mixture of Policy Experts strategy is built inspired by signals
+              and multimodal inputs for adaptively selecting skill experts and generating closed-loop action sequences.
+              Also, it integrates a lightweght Multimodal Diffusion Policy (MMDP) to enhance spatial perception by
+              fusing multi-visual modality features.
+              Besides, the pioneering memory mechanism establishes feedback between the reasoning and acting layers,
+              facilitating adaptive execution of long-horizon tasks and real-time replanning.
+              Notably, we create <strong>SandGo-1k</strong> and <strong>SandThink-21k</strong>, the first expert-level multimodal
+              embodied dataset and CoT dataset tailored for sandy environments.
+              At a high execution frequency of 30 FPS, MindExplore is 3.01&times; more successful than existing
+              methods in unstructured and dynamic environments.
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End youtube video -->
+  </section>
+  <!-- End paper abstract -->
 
+  <!-- Framework Section -->
+  <section class="section">
+    <div class="container is-max-desktop has-text-centered">
+      <!-- Title -->
+      <h2 class="title is-3">Framework</h2>
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
+      <!-- Image -->
+      <figure class="image is-inline-block">
+        <img src="static/images/fw-1.png" alt="Framework" style="max-width: 100%; height: auto; border-radius: 8px;">
+      </figure>
+
+      <!-- Caption / Description with narrower width -->
+      <div style="max-width: 850px; margin: 1.5rem auto 0 auto;">
+        <div class="content has-text-justified">
+          <p>
+            <strong>MindExplore</strong> comprises a reasoning layer for task decomposition and an acting layer for
+            execution.
+            The <strong>Reasoning Layer</strong>, built on Qwen2-VL, processes RGB images and applies Chain-of-Thought
+            (CoT)
+            reasoning to generate structured meta-action instructions. The acting layer, a Mixture of Policy Experts
+            (MoPE),
+            includes two Multimodal Diffusion Policies (MMDPs): a base expert using RGB-Depth and LiDAR for movement,
+            and an
+            arm expert using RGB-Depth for manipulation. A memory mechanism ensures real-time feedback, enabling the
+            reasoning
+            layer to dynamically adjust the actions of the acting layer for optimal execution.
+          </p>
         </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
       </div>
     </div>
   </section>
-<!--End paper poster -->
 
 
-<!--BibTex citation -->
+  <!-- Task Section -->
+  <section class="section">
+    <div class="container is-max-desktop has-text-centered">
+      <!-- Title -->
+      <h2 class="title is-3">Tasks in Various Scenes</h2>
+
+      <!-- Image -->
+      <figure class="image is-inline-block">
+        <img src="static/images/demo-1.png" alt="Framework" style="max-width: 100%; height: auto; border-radius: 8px;">
+      </figure>
+
+      <!-- Caption / Description with narrower width -->
+      <div style="max-width: 900px; margin: 1.5rem auto 0 auto;">
+        <div class="content has-text-justified">
+          <p>
+            During long-horizon tasks, the reasoning layer decomposes the instruction into a structured sequence of
+            executable steps. The acting layer then orchestrates the hierarchical execution by leveraging the
+            <strong>Base Expert</strong> and <strong>Arm Expert</strong>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image carousel -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/Grass.jpg" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+              Grass Scene.
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/Rubble.jpg" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+              Rubble Scene.
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/Dense.png" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+              Dense Scene.
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/Mud.png" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+              Mud Scene.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End image carousel -->
+
+
+
+
+  <!-- Scene Setup Illustration -->
+  <section class="section">
+    <div class="container is-max-desktop has-text-centered">
+      <!-- Title -->
+      <h2 class="title is-3">Embodied Dataset: SandGo-1k</h2>
+
+      <!-- Image -->
+      <figure>
+        <img src="static/images/data-1.png" alt="Scene Setup"
+          style="max-width: 80%; height: auto; display: block; margin: 0 auto; border-radius: 8px;">
+
+        <figcaption class="has-text-grey mt-3"
+          style="max-width: 1000px; margin: 0 auto; font-size: 0.95em; text-align: center;">
+          <strong>Left:</strong> AgileX robotic arm degrees of freedom and terrain layout (rugged areas, obstacles,
+          pits, dunes).<br>
+          <strong>Middle:</strong> Base movement states.<br>
+          <strong>Right:</strong> Overview of collected multimodal data.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="box" style="padding: 1.5rem;">
+        <h2 class="title is-5 has-text-centered" style="margin-bottom: 1rem;">
+          Table 1. The success rates of different VLA models across 24 tasks in four long-horizon tasks.
+        </h2>
+
+        <div class="table-container">
+          <table class="table is-bordered is-striped is-hoverable is-fullwidth has-text-centered">
+            <!-- 第一部分 -->
+            <thead>
+              <tr>
+                <th colspan="8" class="has-text-centered"><strong>Coarse-Grained Long-Horizon Tasks</strong></th>
+                <th colspan="8" class="has-text-centered"><strong>Intensive Instruction-Following Tasks</strong></th>
+              </tr>
+              <tr>
+                <th rowspan="2">Method</th>
+                <th>Task1</th>
+                <th>Task2</th>
+                <th>Task3</th>
+                <th>Task4</th>
+                <th>Task5</th>
+                <th>Task6</th>
+                <th rowspan="2" style="min-width: 100px;">Avg. (%)</th>
+                <th>Task7</th>
+                <th>Task8</th>
+                <th>Task9</th>
+                <th>Task10</th>
+                <th>Task11</th>
+                <th>Task12</th>
+                <th rowspan="2" style="min-width: 100px;">Avg. (%)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>OpenVLA</td>
+                <td>0/10</td>
+                <td>0/10</td>
+                <td>3/10</td>
+                <td>0/10</td>
+                <td>2/10</td>
+                <td>1/10</td>
+                <td>10.00%</td>
+                <td>1/10</td>
+                <td>3/10</td>
+                <td>0/10</td>
+                <td>0/10</td>
+                <td>1/10</td>
+                <td>2/10</td>
+                <td>11.67%</td>
+              </tr>
+              <tr>
+                <td>RDT</td>
+                <td>5/10</td>
+                <td>3/10</td>
+                <td>0/10</td>
+                <td>3/10</td>
+                <td>6/10</td>
+                <td>5/10</td>
+                <td>36.67%</td>
+                <td>5/10</td>
+                <td>3/10</td>
+                <td>2/10</td>
+                <td>0/10</td>
+                <td>5/10</td>
+                <td>5/10</td>
+                <td>33.33%</td>
+              </tr>
+              <tr>
+                <td><strong>MindExplore</strong></td>
+                <td><strong>10/10</strong></td>
+                <td><strong>8/10</strong></td>
+                <td><strong>8/10</strong></td>
+                <td><strong>7/10</strong></td>
+                <td><strong>10/10</strong></td>
+                <td><strong>10/10</strong></td>
+                <td><strong>88.33%</strong></td>
+                <td><strong>10/10</strong></td>
+                <td><strong>9/10</strong></td>
+                <td><strong>10/10</strong></td>
+                <td><strong>8/10</strong></td>
+                <td><strong>9/10</strong></td>
+                <td><strong>10/10</strong></td>
+                <td><strong>93.33%</strong></td>
+              </tr>
+            </tbody>
+
+            <!-- 第二部分 -->
+            <thead>
+              <tr>
+                <th colspan="8" class="has-text-centered"><strong>Cross-Expert Tasks</strong></th>
+                <th colspan="8" class="has-text-centered"><strong>Zero-Shot Generalization Tasks</strong></th>
+              </tr>
+              <tr>
+                <th rowspan="2">Method</th>
+                <th>Task13</th>
+                <th>Task14</th>
+                <th>Task15</th>
+                <th>Task16</th>
+                <th>Task17</th>
+                <th>Task18</th>
+                <th rowspan="2" style="min-width: 100px;">Avg. (%)</th>
+                <th>Task19</th>
+                <th>Task20</th>
+                <th>Task21</th>
+                <th>Task22</th>
+                <th>Task23</th>
+                <th>Task24</th>
+                <th rowspan="2" style="min-width: 100px;">Avg. (%)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>OpenVLA</td>
+                <td>0/10</td>
+                <td>0/10</td>
+                <td>1/10</td>
+                <td>0/10</td>
+                <td>0/10</td>
+                <td>0/10</td>
+                <td>1.67%</td>
+                <td>0/10</td>
+                <td>0/10</td>
+                <td>0/10</td>
+                <td>2/10</td>
+                <td>0/10</td>
+                <td>0/10</td>
+                <td>3.33%</td>
+              </tr>
+              <tr>
+                <td>RDT</td>
+                <td>4/10</td>
+                <td>3/10</td>
+                <td>5/10</td>
+                <td>1/10</td>
+                <td>2/10</td>
+                <td>6/10</td>
+                <td>35.00%</td>
+                <td>2/10</td>
+                <td>1/10</td>
+                <td>3/10</td>
+                <td>1/10</td>
+                <td>0/10</td>
+                <td>2/10</td>
+                <td>15.00%</td>
+              </tr>
+              <tr>
+                <td><strong>MindExplore</strong></td>
+                <td><strong>9/10</strong></td>
+                <td><strong>10/10</strong></td>
+                <td><strong>10/10</strong></td>
+                <td><strong>9/10</strong></td>
+                <td><strong>9/10</strong></td>
+                <td><strong>10/10</strong></td>
+                <td><strong>93.33%</strong></td>
+                <td><strong>10/10</strong></td>
+                <td><strong>8/10</strong></td>
+                <td><strong>9/10</strong></td>
+                <td><strong>7/10</strong></td>
+                <td><strong>10/10</strong></td>
+                <td><strong>10/10</strong></td>
+                <td><strong>86.67%</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="box" style="padding: 1.5rem;">
+        <h2 class="title is-5 has-text-centered" style="margin-bottom: 1rem;">
+          Table 2. Comparison results with the most powerful closed-source and open-source MLLMs on three tasks.
+        </h2>
+        <div class="table-container">
+          <table class="table is-bordered is-striped is-hoverable is-fullwidth has-text-centered">
+            <thead>
+              <tr>
+                <th rowspan="2" style="min-width: 200px; text-align: center; vertical-align: middle;">Model</th>
+                <th colspan="2">Coarse-Grained<br>Long-Horizon Tasks</th>
+                <th colspan="2">Intensive Instruction<br>Following Tasks</th>
+                <th colspan="2">Cross-Expert<br>Multi-Tasks</th>
+                <th colspan="2">The Zero-Shot<br>Generalization Tasks</th>
+              </tr>
+              <tr>
+                <th style="white-space: nowrap; min-width: 110px;">ROUGE_L (%)</th>
+                <th style="white-space: nowrap; min-width: 110px;">Acc. (%)</th>
+                <th style="white-space: nowrap; min-width: 110px;">ROUGE_L (%)</th>
+                <th style="white-space: nowrap; min-width: 110px;">Acc. (%)</th>
+                <th style="white-space: nowrap; min-width: 110px;">ROUGE_L (%)</th>
+                <th style="white-space: nowrap; min-width: 110px;">Acc. (%)</th>
+                <th style="white-space: nowrap; min-width: 110px;">ROUGE_L (%)</th>
+                <th style="white-space: nowrap; min-width: 110px;">Acc. (%)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GPT-4o-latest</td>
+                <td>33.02</td>
+                <td>47.00</td>
+                <td>37.54</td>
+                <td>50.00</td>
+                <td>41.59</td>
+                <td>61.00</td>
+                <td>29.17</td>
+                <td>21.00</td>
+              </tr>
+              <tr>
+                <td>Gemini-2.0-Flash</td>
+                <td>29.52</td>
+                <td>43.00</td>
+                <td>33.69</td>
+                <td>49.00</td>
+                <td>43.53</td>
+                <td>55.00</td>
+                <td>24.36</td>
+                <td>18.00</td>
+              </tr>
+              <tr>
+                <td>InternVL2.5-8B</td>
+                <td>14.71</td>
+                <td>33.00</td>
+                <td>17.45</td>
+                <td>40.00</td>
+                <td>19.37</td>
+                <td>43.00</td>
+                <td>19.88</td>
+                <td>15.00</td>
+              </tr>
+              <tr>
+                <td>Qwen2.5-VL-7B</td>
+                <td>17.32</td>
+                <td>35.00</td>
+                <td>18.93</td>
+                <td>44.00</td>
+                <td>25.32</td>
+                <td>49.00</td>
+                <td>23.73</td>
+                <td>19.00</td>
+              </tr>
+              <tr>
+                <td>DeepSeek-VL2</td>
+                <td>11.84</td>
+                <td>27.00</td>
+                <td>14.61</td>
+                <td>40.00</td>
+                <td>19.49</td>
+                <td>43.00</td>
+                <td>7.18</td>
+                <td>5.00</td>
+              </tr>
+              <tr style="font-weight: bold;">
+                <td>Reasoning Layer</td>
+                <td>69.35</td>
+                <td>87.00</td>
+                <td>70.23</td>
+                <td>81.00</td>
+                <td>75.35</td>
+                <td>89.00</td>
+                <td>63.17</td>
+                <td>73.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="box" style="padding: 1.5rem;">
+        <h2 class="title is-5 has-text-centered" style="margin-bottom: 1rem;">
+          Table 3. Success Rates of the <strong>Acting Layer</strong> across 5 meta-actions.
+        </h2>
+        </h2 class="has-text-centered">
+        Moving to a Target Location (MTL), Crossing Obstacles (CO), Grasping a Specified Object (GSO), Placing the
+        Object into a Designated Container (POC), Writing (Wr). Avg. - Average Success Rate, BE - Base Expert, AE - Arm
+        Expert.
+        <h2>
+          <div class="table-container">
+            <table class="table is-bordered is-striped is-hoverable is-fullwidth has-text-centered">
+              <thead style="background-color: #f5f5f5;">
+                <tr>
+                  <th style="min-width: 100px; text-align: center; vertical-align: middle;">Method</th>
+                  <th>MTL</th>
+                  <th>CO</th>
+                  <th>GSO</th>
+                  <th>POC</th>
+                  <th>Wr</th>
+                  <th style="min-width: 100px;">Avg. (%)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>ACT</td>
+                  <td>13/100</td>
+                  <td>3/65</td>
+                  <td>37/100</td>
+                  <td>55/60</td>
+                  <td>19/50</td>
+                  <td>36.86</td>
+                </tr>
+                <tr>
+                  <td>iDP3</td>
+                  <td>47/100</td>
+                  <td>27/65</td>
+                  <td>49/100</td>
+                  <td>43/60</td>
+                  <td>21/50</td>
+                  <td>50.24</td>
+                </tr>
+                <tr style="background-color: #f0f0f0;">
+                  <td><strong>BE</strong></td>
+                  <td>85/100</td>
+                  <td>58/65</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td><strong>87.12</strong></td>
+                </tr>
+                <tr style="background-color: #f0f0f0;">
+                  <td><strong>AE</strong></td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>79/100</td>
+                  <td>60/60</td>
+                  <td>48/50</td>
+                  <td><strong>91.67</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="box" style="padding: 1.5rem;">
+        <h2 class="title is-5 has-text-centered" style="margin-bottom: 1rem;">
+          Table 4. Ablation results with training strategy on three tasks.
+        </h2>
+        <h2 class="has-text-centered">
+          “+” stands for accumulation.
+        </h2>
+        <div class="table-container">
+          <table class="table is-bordered is-striped is-hoverable is-fullwidth has-text-centered">
+            <thead style="background-color: #f5f5f5;">
+              <tr>
+                <th rowspan="2" style="min-width: 140px; text-align: center; vertical-align: middle;">Model</th>
+                <th colspan="2">Coarse-grained<br>Long-horizon tasks</th>
+                <th colspan="2">Intensive instruction<br>following tasks</th>
+                <th colspan="2">Cross-Expert<br>multi-tasks</th>
+                <th colspan="2">The zero-shot<br>Generalization task</th>
+              </tr>
+              <tr>
+                <th style="min-width: 150px;">ROUGE_L (%)</th>
+                <th style="min-width: 100px;">Acc. (%)</th>
+                <th style="min-width: 150px;">ROUGE_L (%)</th>
+                <th style="min-width: 100px;">Acc. (%)</th>
+                <th style="min-width: 150px;">ROUGE_L (%)</th>
+                <th style="min-width: 100px;">Acc. (%)</th>
+                <th style="min-width: 150px;">ROUGE_L (%)</th>
+                <th style="min-width: 100px;">Acc. (%)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Qwen2-VL-7B</td>
+                <td>13.54</td>
+                <td>29.00</td>
+                <td>15.22</td>
+                <td>35.00</td>
+                <td>23.17</td>
+                <td>37.00</td>
+                <td>7.31</td>
+                <td>19.00</td>
+              </tr>
+              <tr>
+                <td>+ Cold Start</td>
+                <td>47.35</td>
+                <td>62.00</td>
+                <td>51.42</td>
+                <td>68.00</td>
+                <td>64.57</td>
+                <td>75.00</td>
+                <td>33.16</td>
+                <td>43.00</td>
+              </tr>
+              <tr>
+                <td>+ iteration 1</td>
+                <td>54.18</td>
+                <td>69.00</td>
+                <td>54.54</td>
+                <td>70.00</td>
+                <td>67.15</td>
+                <td>79.00</td>
+                <td>35.34</td>
+                <td>55.00</td>
+              </tr>
+              <tr>
+                <td>+ iteration 2</td>
+                <td>61.58</td>
+                <td>75.00</td>
+                <td>63.29</td>
+                <td>79.00</td>
+                <td>70.23</td>
+                <td>81.00</td>
+                <td>46.57</td>
+                <td>64.00</td>
+              </tr>
+              <tr style="background-color: #f0f0f0;">
+                <td><strong>+ iteration 3</strong></td>
+                <td><strong>69.35</strong></td>
+                <td><strong>87.00</strong></td>
+                <td><strong>70.23</strong></td>
+                <td><strong>81.00</strong></td>
+                <td><strong>75.35</strong></td>
+                <td><strong>89.00</strong></td>
+                <td><strong>63.17</strong></td>
+                <td><strong>73.00</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="box" style="padding: 1.5rem;">
+        <h2 class="title is-5 has-text-centered" style="margin-bottom: 1rem;">
+          Table 5. Ablation study of the MindExplore system on the cruising and obstacle avoidance task.
+        </h2>
+        <div class="table-container">
+          <table class="table is-bordered is-striped is-hoverable is-fullwidth has-text-centered">
+            <thead style="background-color: #f5f5f5;">
+              <tr>
+                <th style="min-width: 250px;">Method</th>
+                <th>Task1</th>
+                <th>Task2</th>
+                <th>Task7</th>
+                <th>Task8</th>
+                <th>Task13</th>
+                <th>Task14</th>
+                <th>Task19</th>
+                <th>Task20</th>
+                <th style="min-width: 100px;">Avg. (%)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>w/o Reasoning & Memory</td>
+                <td>5/10</td>
+                <td>5/10</td>
+                <td>8/10</td>
+                <td>6/10</td>
+                <td>4/10</td>
+                <td>6/10</td>
+                <td>9/10</td>
+                <td>5/10</td>
+                <td>60.00</td>
+              </tr>
+              <tr>
+                <td>w/o Memory</td>
+                <td>8/10</td>
+                <td>7/10</td>
+                <td>10/10</td>
+                <td>7/10</td>
+                <td>5/10</td>
+                <td>8/10</td>
+                <td>9/10</td>
+                <td>7/10</td>
+                <td>76.25</td>
+              </tr>
+              <tr style="background-color: #f0f0f0;">
+                <td><strong>MindExplore</strong></td>
+                <td><strong>10/10</strong></td>
+                <td><strong>8/10</strong></td>
+                <td><strong>10/10</strong></td>
+                <td><strong>9/10</strong></td>
+                <td><strong>9/10</strong></td>
+                <td><strong>10/10</strong></td>
+                <td><strong>10/10</strong></td>
+                <td><strong>8/10</strong></td>
+                <td><strong>92.50</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="box" style="padding: 1.5rem;">
+        <h2 class="title is-5 has-text-centered" style="margin-bottom: 1rem;">
+          Table 6. Ablation Study on Input Modalities for Meta-Actions.<br>
+        </h2>
+        <h2 class="has-text-centered">
+          “PC” - Point Cloud, “2D” - 2D Images.
+        </h2>
+        <div class="table-container">
+          <table class="table is-bordered is-striped is-hoverable is-fullwidth has-text-centered">
+            <thead style="background-color: #f5f5f5;">
+              <tr>
+                <th style="min-width: 80px;">Method</th>
+                <th style="min-width: 160px;">Input Modality</th>
+                <th style="min-width: 100px;">Depth Type</th>
+                <th>MTL</th>
+                <th>GSO</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>AE</td>
+                <td>RGB</td>
+                <td>-</td>
+                <td>-</td>
+                <td>23/50</td>
+              </tr>
+              <tr style="background-color: #f0f0f0;">
+                <td>AE</td>
+                <td>Depth+RGB</td>
+                <td>PC</td>
+                <td>-</td>
+                <td><strong>40/50</strong></td>
+              </tr>
+              <tr>
+                <td>BE</td>
+                <td>RGB</td>
+                <td>-</td>
+                <td>5/50</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>BE</td>
+                <td>LiDAR+Depth</td>
+                <td>PC</td>
+                <td>37/50</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>BE</td>
+                <td>LiDAR+Depth+RGB</td>
+                <td>2D</td>
+                <td>32/50</td>
+                <td>-</td>
+              </tr>
+              <tr style="background-color: #f0f0f0;">
+                <td>BE</td>
+                <td>LiDAR+Depth+RGB</td>
+                <td>PC</td>
+                <td><strong>42/50</strong></td>
+                <td>-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Paper ACK -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Acknowledgements</h2>
+          <div class="content has-text-justified">
+            <p>
+              This work builds upon the foundation established by 
+              <a href="https://github.com/YanjieZe/Improved-3D-Diffusion-Policy" target="_blank">iDP3</a>, 
+              and we express our sincere appreciation to the authors for making their implementation publicly available.
+              We also acknowledge the use of the <strong>ms-swift</strong> framework during training, which provided essential support
+              for the development and evaluation of our approach.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+
+
+
+
+
+
+
+
+
+
+  <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>BibTex Code Here</code></pre>
     </div>
-</section>
-<!--End BibTex citation -->
+  </section>
+  <!--End BibTex citation -->
 
 
   <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
 
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
 
+            </p>
+
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+  <!-- Statcounter tracking code -->
 
-    <!-- End of Statcounter Code -->
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
-  </body>
-  </html>
+  <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
